@@ -1,0 +1,156 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;800&display=swap');
+
+
+
+*,*::before,*::after{
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+}
+
+
+/* ---------------------------------------------------------------------------------------------------------- */
+
+main{
+    position:relative;
+    background-color: #664520a3;
+    height:100vh;
+    width:100vw;
+    overflow:hidden;
+    transition: 0.5s;
+    /* transform-style: preserve-3d; */
+}
+.parallax {
+    pointer-events: none;
+    transform: translate(-50%, 50%);
+    transition:0.35s cubic-bezier(0.2,0.49,0.32,0.99);
+}
+.bg-img{
+    position:absolute;
+    width:130%;
+    top:7.5%;
+    left:50%;
+    z-index: 1;
+}
+.Gradient-1{
+    position:absolute;
+    z-index: 9;
+    width:135%;
+    pointer-events:none;
+    }
+
+
+.layer-1{
+    position:absolute;
+    z-index:7;
+    width:115%;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-15%);
+}
+
+.foggy2{
+    position:absolute;
+    z-index:8;
+    width:145%;
+    top:150%;
+    pointer-events:none;
+    }
+
+
+.layer-2{
+    position:absolute;
+    z-index:5;
+    width:120%;
+    top:17%;
+    left:50%;
+    }
+.layer-3{
+    position:absolute;
+    z-index:4;
+    width:110%;
+    top:28%;
+    left:56%;
+    }
+.layer-4{
+        position:absolute;
+        z-index:3;
+        width:100%;
+        top:48%;
+        left:45%;
+        }
+.layer-5{
+            position:absolute;
+            z-index:2;
+            width:147%;
+            top:20%;
+            left:51%;
+            }
+.txt {
+        position: absolute;
+        z-index: 6;
+        top: 30%;
+        left: 50%;
+        transform: translate(-45%, -15%);
+        text-align: center;
+        text-transform: uppercase;
+        pointer-events: auto; /* Enable pointer events for this element */
+        
+    }
+.txt h3{
+    color: #f0c49f;
+    font-weight:110;
+    font-size:7.5rem;
+    line-height: 0.90;
+    
+}
+.txt h1{
+    color: #ff7403;
+    font-weight:800;
+    font-size:7rem;
+    line-height: 0.88;
+
+}
+
+.vignette{
+    position:absolute;
+    z-index: 2;
+    width:100%;
+    height:100%;
+    top:0;
+    left:0;
+    background:radial-gradient(ellipse at center,rgba(0,0,0,0)57%,rgba(0,0,0,0.7))
+}
+
+
+
+
+
+@media(max-width:1100px){
+    .text h1{
+        font-size:5.8rem;
+    }
+    .text h2{
+        font-size:4.7rem;
+    }
+}
+@media(max-width:725px){
+    .text h1{
+        font-size:5rem;
+        line-height:1.1;
+    }
+    .text h2{
+        font-size:4.1rem;
+        line-height: 1.1;
+    }
+}
+
+@media(max-width:520px){
+    .text h1{
+        font-size:3.3rem;
+    }
+    .text h2{
+        font-size:2.6rem;
+    }
+}
